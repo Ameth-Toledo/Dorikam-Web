@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorikam</title>
+    <link rel="icon" type="image/png" href="./src/resources/imgs/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="side-image side-image--left">
+        <img src="./src/resources/imgs/Izq-Arriba.png" alt="Image" class="side-image__img">
+        <div class="text-overlay">Agregar y Buscar Productos</div>
+    </div>
+
+    <div class="side-image side-image--right">
+        <img src="./src/resources/imgs/Der-Abajo.png" alt="Image" class="side-image__img">
+    </div>
+
+    <div class="container">
+        <img src="./src/resources/imgs/DorikamName.png" alt="Dorikam" class="logo">
+
+        <div class="form-table-container">
+            <div class="form-container">
+                <form id="shoe-form">
+                    <label for="marca">Marca:</label>
+                    <input id="marcaShoe" type="text" name="marca"><br><br>
+
+                    <label for="talla">Talla:</label>
+                    <input id="tallaShoe" type="text" name="talla"><br><br>
+
+                    <label for="id">Id:</label>
+                    <input id="idShoe" type="text" name="id"><br><br>
+
+                    <label for="color">Color:</label>
+                    <input id="colorShoe" type="text" name="color"><br><br>
+
+                    <label for="fecha">Fecha:</label>
+                    <input id="fechaShoe" type="text" name="fecha"><br><br>
+
+                    <label for="cantidad">Cantidad de pares:</label>
+                    <input id="cantidadShoe" type="text" name="cantidad"><br></br>
+
+                    <button id="shoe-btn" type="button">Enviar</button>
+                </form>
+            </div>
+
+            <div class="search-container">
+                <label for="buscar">Buscar zapatos:</label>
+                <input type="text" id="buscar" name="buscar" placeholder="Ingrese el id del zapato a buscar">
+                <button id="search-btn" type="button">Buscar</button><br><br>
+
+                <button id="min-btn" type="button">Buscar valor mínimo</button>
+                <button id="max-btn" type="button">Buscar valor máximo</button>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Marca</th>
+                            <th>Talla</th>
+                            <th>ID</th>
+                            <th>Color</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="src/controllers/script.js"></script>
+</body>
+</html>
